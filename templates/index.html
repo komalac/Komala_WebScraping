@@ -21,7 +21,7 @@
     <div class="row">
       <div class="col-md-12">
         <h3>Latest Mars News</h3>
-        <p class="mars_news"> <b>{{ mars_info.news_title }}</b><br>
+        <p class="mars_news"> <b>{{ mars_info.news_title }}</b>
           {{ mars_info.news_info }}          
         </p>
       </div>
@@ -30,33 +30,34 @@
       <div class="col-md-8">
         <div class="container bg-white">
             <div class="row">    
-              <div class="col-md-12">
-                <h3>Mars Hemispheres</h3>   
+              <div class="col-md-8 text-center">
+                <h3>Mars Hemispheres</h3><br>
               </div>                 
             </div>
             <div class="row">
-              <div class="col-md-6">            
-                <img class="" alt="Tumor Response to treatment" src= {{ mars_info.hemis_list[0].imgsrc}}>
+              <div class="col-md-4">            
+                <img class="img-fluid" alt="Tumor Response to treatment" src= {{ mars_info.hemis_list[0].imgsrc}} width="200", height="200">
+                
                 <div class="caption text-dark ">
-                  <p>{{ mars_info.hemis_list[0].title}}</p>
+                  {{ mars_info.hemis_list[0].title}}
                 </div>             
               </div>
-              <div class="col-md-6">            
-                <img class="" alt="Tumor Response to treatment" src= {{ mars_info.hemis_list[1].imgsrc}}>
+              <div class="col-md-4">            
+                  <img class="img-fluid" alt="Tumor Response to treatment" src= {{ mars_info.hemis_list[1].imgsrc}} width="200", height="200">
                 <div class="caption text-dark">
                   <p>{{ mars_info.hemis_list[1].title}}</p>
                 </div>             
               </div>      
             </div>
             <div class="row">
-                <div class="col-md-6">            
-                  <img class="" alt="Tumor Response to treatment" src= {{ mars_info.hemis_list[2].imgsrc}}>
+                <div class="col-md-4">            
+                    <img class="img-fluid" alt="Tumor Response to treatment" src= {{ mars_info.hemis_list[2].imgsrc}} width="200", height="200">
                   <div class="caption text-dark">
                     <p>{{ mars_info.hemis_list[2].title}}</p>
                   </div>             
                 </div>
-                <div class="col-md-6">            
-                  <img class="" alt="Tumor Response to treatment" src= {{ mars_info.hemis_list[3].imgsrc}}>
+                <div class="col-md-4">            
+                    <img class="img-fluid" alt="Tumor Response to treatment" src= {{ mars_info.hemis_list[3].imgsrc}} width="200", height="200">
                   <div class="caption text-dark">
                     <p>{{ mars_info.hemis_list[3].title}}</p>
                   </div>             
