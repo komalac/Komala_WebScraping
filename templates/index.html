@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data!</a></p>
+    </div>    
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Latest Mars News</h3>
+        <p class="mars_news"> <b>{{ mars_info.news_title }}</b><br>
+          {{ mars_info.news_info }}          
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="container bg-white">
+            <div class="row">    
+              <div class="col-md-12">
+                <h3>Mars Hemispheres</h3>   
+              </div>                 
+            </div>
+            <div class="row">
+              <div class="col-md-6">            
+                <img class="" alt="Tumor Response to treatment" src= {{ mars_info.hemis_list[0].imgsrc}}>
+                <div class="caption text-dark ">
+                  <p>{{ mars_info.hemis_list[0].title}}</p>
+                </div>             
+              </div>
+              <div class="col-md-6">            
+                <img class="" alt="Tumor Response to treatment" src= {{ mars_info.hemis_list[1].imgsrc}}>
+                <div class="caption text-dark">
+                  <p>{{ mars_info.hemis_list[1].title}}</p>
+                </div>             
+              </div>      
+            </div>
+            <div class="row">
+                <div class="col-md-6">            
+                  <img class="" alt="Tumor Response to treatment" src= {{ mars_info.hemis_list[2].imgsrc}}>
+                  <div class="caption text-dark">
+                    <p>{{ mars_info.hemis_list[2].title}}</p>
+                  </div>             
+                </div>
+                <div class="col-md-6">            
+                  <img class="" alt="Tumor Response to treatment" src= {{ mars_info.hemis_list[3].imgsrc}}>
+                  <div class="caption text-dark">
+                    <p>{{ mars_info.hemis_list[3].title}}</p>
+                  </div>             
+                </div>      
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Current Weather on Mars</h3>
+            <p class="mars_weather"> 
+              {{ mars_info.mars_weather }}              
+            </p>
+          </div>
+        </div>
+           
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Mars Facts</h3>
+            <table class="table table-bordered table-hover table-condensed table-striped table-sm">
+              <thead class="thead-dark">
+                <tr>
+                  <th title="Field #1">Description</th>                                               
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{ mars_info.mars_facts[0] }}</td>                        
+                </tr>
+                <tr>
+                  <td>{{ mars_info.mars_facts[1] }}</td>                        
+                </tr>
+                <tr>
+                  <td>{{ mars_info.mars_facts[2] }}</td>                        
+                </tr>
+                <tr>
+                  <td>{{ mars_info.mars_facts[3] }}</td>                        
+                </tr>
+                <tr>
+                  <td>{{ mars_info.mars_facts[4] }}</td>                        
+                </tr>
+                <tr>
+                  <td>{{ mars_info.mars_facts[5] }}</td>                        
+                </tr>
+                <tr>
+                  <td>{{ mars_info.mars_facts[6] }}</td>                        
+                </tr>
+                <tr>
+                  <td>{{ mars_info.mars_facts[7] }}</td>                        
+                </tr>                      
+                <tr>
+                  <td>{{ mars_info.mars_facts[8] }}</td>                        
+                </tr>                      
+              </tbody>
+            </table>
+        </div>
+      </div>  
+      </div>
+    </div>
+  
+    </div>
+  </div>
+  
+</body>
+
+</html>
